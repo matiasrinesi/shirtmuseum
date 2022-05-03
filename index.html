@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shirt Museum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
@@ -13,7 +15,7 @@
 
 </head>
 <body class="bodyindex">
-    <header class="header">
+    <!-- <header class="header">
         <img class="header__logo" src="images/logo coder blue.jpeg" alt="logo" width="90" height="90">
         <i class=" header__hambur fas fa-bars"></i>
       
@@ -27,15 +29,50 @@
             </ul>
         </nav>
        
-</header>
+</header> -->
+<header>
+    <nav class="navbar navbar-expand-lg  navbar-light bg-dark">
+      <div class="container-fluid ">
+        <img class="header__logo" src="images/logosm3.webp" alt="logo" >
+        <a class="navbar-brand text-white" href="../index.html"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="pages/camisetas.html">Camisetas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="pages/Shorts.html">Shorts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="pages/mystery.html">Mystery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="pages/contact.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
       
   
-    <hr>
+    
 
     <main>
-        <section class="inicio">
+        <section class="inicio bg-dark">
            
-            <h1 class="inicio__titulo">Shirt Museum</h1>
+            <h1 class="text-warning inicio__titulo">Shirt Museum</h1>
             <h2 class="inicio__subtitulo">Las camisetas nunca pasan de moda</h2>
             <p class="inicio__parrafo">¿Fanático del fútbol?
             En Shirt Museum podés encontrar una gran variedad de camisetas y shorts de tus equipos favoritos.
@@ -61,14 +98,14 @@
         <br>
 
           <div class="opcion hijo1">
-            <h3 class="camisetas">camisetas</h3> <img class="img" src="images/messipsg.webp" alt="messipsg" width="150" height="150"> <button class="btn"><a href="pages/camisetas.html">camisetas</a></button> 
+            <h3 class="camisetas">camisetas</h3> <img class="img" src="images/messipsg.webp" alt="messipsg" width="150" height="150"> <button class="boton"><a href="pages/camisetas.html">camisetas</a></button> 
           </div>
 
            <div class="opcion hijo2">
-            <h3 class="shorts">shorts</h3> <img class="img" src="images/shortpsg.jpg" alt="shortpsg" width="150" height="150"> <button class="btn"><a href="pages/Shorts.html">shorts</a></button>
+            <h3 class="shorts">shorts</h3> <img class="img" src="images/shortpsg.jpg" alt="shortpsg" width="150" height="150"> <button class="boton"><a href="pages/Shorts.html">shorts</a></button>
            </div>
            <div class="opcion hijo3">
-            <h3 class="mysterybox">mystery box</h3> <img class="img" src="images\mysterybox.jpg" alt="mystery" width="150" height="150"> <button class="btn"><a href="pages/mystery.html">mystery</a></button> 
+            <h3 class="mysterybox">mystery box</h3> <img class="img" src="images\mysterybox.jpg" alt="mystery" width="150" height="150"> <button class="boton"><a href="pages/mystery.html">mystery</a></button> 
            </div>
        
          </div>    

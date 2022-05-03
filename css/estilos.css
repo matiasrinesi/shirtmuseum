@@ -205,7 +205,7 @@ body {
      
  
  }
-.btn{
+.boton{
     display: block;
     position: relative;
     left: 35%;
@@ -333,14 +333,13 @@ footer h5{
 
 
 .mystery__video{
-   /* display: inline-block;
+    display: inline-block;
     border-radius: 20px;
   
    margin: 40px;
    color: #e2e8f3;
    text-align: center;
    padding: 10px;
-    background-color: #0a1140;*/
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -360,8 +359,7 @@ footer h5{
     text-decoration: underline;
     
 }
-.caja{
-    background-color: #0a1140;
+.caja{  
     border-radius: 5%;
     justify-content: center;
    align-items: center;
@@ -581,6 +579,7 @@ transform: scale(1);
         margin: 10px;
     font-size: 12px;
     }
+
     .camisetas{
         grid-template-rows: 4% 32% 32% 32%;
         grid-template-areas: 

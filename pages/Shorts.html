@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
@@ -13,7 +15,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <!-- <header class="header">
        <img class="header__logo" src="../images/logo coder blue.jpeg" alt="logo" width="90" height="90"> 
        <i class=" header__hambur fas fa-bars"></i>
        <nav class="header__nav">
@@ -25,10 +27,45 @@
                 <li> <a class="nav__text" href="contact.html">Contacto </a>   </li>
             </ul>
         </nav>
-    </header>
+    </header> -->
+    <header>
+        <nav class="navbar navbar-expand-lg  navbar-light bg-dark">
+          <div class="container-fluid ">
+            <img class="header__logo" src="../images/logosm3.webp" alt="logo" >
+            <a class="navbar-brand text-white" href="../index.html"></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="navbar-nav ms-auto ">
+                <li class="nav-item">
+                  <a class="nav-link text-warning" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-warning" href="camisetas.html">Camisetas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-warning" href="shorts.html">Shorts</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-warning" href="mystery.html">Mystery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-warning" href="contact.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
 
 
-    <hr>
+    
     
     <div class="camisetas">
         <h1 class="camiseta__intro"><strong>Nuestros Shorts</strong></h1>
@@ -36,28 +73,28 @@
         <div class="zona1">
             <h2 class="zona__titulo"><strong>Europa:</strong> </h2>
                 <ul class="div1__list">
-                    <li class="opcion__compras"> <h3 class="camisetas">PSG</h3> <img class="imagen" src="../images/PSG-logo.png" alt="psg" > <button class="btn"><a target="_blank" href="https://www.dexter.com.ar/short-nike-psg-2021%2F22-stadium-home/NI_CV8328-410.html">comprar</a></button> </li>
-                    <li class="opcion__compras"> <h3 class="camisetas">Barca</h3> <img class="imagen" src="../images/BARCA-LOGO.png" alt="barca"> <button class="btn"><a target="_blank" href="https://www.goalinn.com/futbol/nike-pantalon-corto-fc-barcelona-stadium-primera-segunda-equipacion-21-22/138029322/p?utm_source=google_products&utm_medium=merchant&id_producte=12790941&country=ar&gclid=CjwKCAjwuYWSBhByEiwAKd_n_it9frnZJ9Z9mtXqZdlXmlLCbCkCi2q9BaSuP60AfvezNZ6dsB3xtBoC-WUQAvD_BwE&gclsrc=aw.ds">comprar</a></button> </li>
-                    <li class="opcion__compras"> <h3 class="camisetas">Real Madrid</h3> <img class="imagen" src="../images/Real-Madrid-Logo.png" alt="real" > <button class="btn"><a target="_blank" href="https://www.adidas.com.ar/shorts-local-real-madrid-21-22/GM6784.html?cm_mmc=AdieSEM_Google_PLA-_-Always_On-_-Shopping-_-GM6784-0006-_-dv%3AeCom-_-cn%3AAlways_On-_-pc%3AF%C3%BAtbol&cm_mmc1=AR&cm_mmc2=PLA-Multiple-F%C3%BAtbol-Other-None-AR-LATAM-eCom-Paid_Search&dfw_tracker=20956-GM6784-0006&gclid=CjwKCAjwuYWSBhByEiwAKd_n_sTHm9fh5htXPjyY-fgD2lNukY3KAtS7hVmW9wQAhCBfa5dkA9YoKxoCEj0QAvD_BwE&gclsrc=aw.ds">comprar</a></button> </li>
-                    <li class="opcion__compras"> <h3 class="camisetas">City</h3> <img class="imagen" src="../images/Manchester-City-logo.jpg" alt="city"> <button class="btn"><a target="_blank" href="https://ar.puma.com/shorts-de-futbol-replica-mcfc-21-22-759229-01.html?utm_source=GGL&utm_medium=PLA&gclid=Cj0KCQjwl7qSBhD-ARIsACvV1X3WZ5J2Qcr-FFOZKg4odn0jbt8p2r-BqnzKgOS98sJI2zpTTCchlG0aAqJuEALw_wcB&color=5727">comprar</a></button> </li>
+                    <li class="opcion__compras"> <h3 class="camisetas">PSG</h3> <img class="imagen" src="../images/PSG-logo.png" alt="psg" > <button class="boton"><a target="_blank" href="https://www.dexter.com.ar/short-nike-psg-2021%2F22-stadium-home/NI_CV8328-410.html">comprar</a></button> </li>
+                    <li class="opcion__compras"> <h3 class="camisetas">Barca</h3> <img class="imagen" src="../images/BARCA-LOGO.png" alt="barca"> <button class="boton"><a target="_blank" href="https://www.goalinn.com/futbol/nike-pantalon-corto-fc-barcelona-stadium-primera-segunda-equipacion-21-22/138029322/p?utm_source=google_products&utm_medium=merchant&id_producte=12790941&country=ar&gclid=CjwKCAjwuYWSBhByEiwAKd_n_it9frnZJ9Z9mtXqZdlXmlLCbCkCi2q9BaSuP60AfvezNZ6dsB3xtBoC-WUQAvD_BwE&gclsrc=aw.ds">comprar</a></button> </li>
+                    <li class="opcion__compras"> <h3 class="camisetas">Real Madrid</h3> <img class="imagen" src="../images/Real-Madrid-Logo.png" alt="real" > <button class="boton"><a target="_blank" href="https://www.adidas.com.ar/shorts-local-real-madrid-21-22/GM6784.html?cm_mmc=AdieSEM_Google_PLA-_-Always_On-_-Shopping-_-GM6784-0006-_-dv%3AeCom-_-cn%3AAlways_On-_-pc%3AF%C3%BAtbol&cm_mmc1=AR&cm_mmc2=PLA-Multiple-F%C3%BAtbol-Other-None-AR-LATAM-eCom-Paid_Search&dfw_tracker=20956-GM6784-0006&gclid=CjwKCAjwuYWSBhByEiwAKd_n_sTHm9fh5htXPjyY-fgD2lNukY3KAtS7hVmW9wQAhCBfa5dkA9YoKxoCEj0QAvD_BwE&gclsrc=aw.ds">comprar</a></button> </li>
+                    <li class="opcion__compras"> <h3 class="camisetas">City</h3> <img class="imagen" src="../images/Manchester-City-logo.jpg" alt="city"> <button class="boton"><a target="_blank" href="https://ar.puma.com/shorts-de-futbol-replica-mcfc-21-22-759229-01.html?utm_source=GGL&utm_medium=PLA&gclid=Cj0KCQjwl7qSBhD-ARIsACvV1X3WZ5J2Qcr-FFOZKg4odn0jbt8p2r-BqnzKgOS98sJI2zpTTCchlG0aAqJuEALw_wcB&color=5727">comprar</a></button> </li>
         </div>
         
         <div class="zona2">
             <h2 class="zona__titulo"><strong>Sudamerica:</strong> </h2>
                 <ul class="div1__list">
-                    <li class="opcion__compras"> <h3 class="camisetas">Boca</h3> <img class="imagen" src="../images/boca-logo.png" alt="boca" > <button class="btn"><a target="_blank" href="https://www.adidas.com.ar/shorts-local-boca-juniors-21-22/GU1885.html?cm_mmc=AdieSEM_Google_PLA-_-Always_On-_-Shopping-_-GU1885-0004-_-dv%3AeCom-_-cn%3AAlways_On-_-pc%3AF%C3%BAtbol&cm_mmc1=AR&cm_mmc2=PLA-Multiple-F%C3%BAtbol-Other-None-AR-LATAM-eCom-Paid_Search&dfw_tracker=20956-GU1885-0004&gclid=CjwKCAjwuYWSBhByEiwAKd_n_oCcjd1_Yd-zFk9gRz22xdwX63Y7Rr9YX0g39t0a-uUQtzQcO6LdsBoCmHwQAvD_BwE&gclsrc=aw.ds">comprar</a></button> </li>
-                    <li class="opcion__compras"> <h3 class="camisetas">River</h3> <img class="imagen" src="../images/river-logo.jpg" alt="river"> <button class="btn"><a target="_blank" href="https://www.adidas.com.ar/shorts-de-descanso-tiro-river-plate/GU9633.html?cm_mmc=AdieSEM_Google_PLA-_-Always_On-_-Shopping-_-GU9633-0002-_-dv%3AeCom-_-cn%3AAlways_On-_-pc%3AF%C3%BAtbol&cm_mmc1=AR&cm_mmc2=PLA-Multiple-F%C3%BAtbol-Other-None-AR-LATAM-eCom-Paid_Search&dfw_tracker=20956-GU9633-0002&gclid=CjwKCAjwuYWSBhByEiwAKd_n_lv25UVBC1-zXMcp8KA4uwsEIuLgZoPaLv0cFld5BhKcgc5R0MOV6xoCOCgQAvD_BwE&gclsrc=aw.ds">comprar</a></button> </li>
-                    <li class="opcion__compras"> <h3 class="camisetas">Rosario Central</h3> <img class="imagen" src="../images/central-logo.jpg" alt="central" > <button class="btn"><a target="_blank" href="https://tienda.umbro.com.ar/u31rc791-shorts-hombre-umbro-of-1-2022-c-a-r-c/p?idsku=283713&gclid=CjwKCAjwuYWSBhByEiwAKd_n_jr6jsEhLMMnPe5l_HVNp5U7yeUffh6lrcUFeLkikaaC269E-Kl_OxoC5S4QAvD_BwE">comprar</a></button> </li>
-                    <li class="opcion__compras"> <h3 class="camisetas">Nacional</h3> <img class="imagen" src="../images/nacional-log.jpg" alt="nacional"> <button class="btn"><a target="_blank" href="https://articulo.mercadolibre.com.uy/MLU-600077264-short-nacional-umbro-oficial-futbol-auge-_JM?searchVariation=173555753059#searchVariation=173555753059&position=4&search_layout=stack&type=item&tracking_id=92ee0441-8b14-4f62-8378-6be168548fb1">comprar</a></button> </li>
+                    <li class="opcion__compras"> <h3 class="camisetas">Boca</h3> <img class="imagen" src="../images/boca-logo.png" alt="boca" > <button class="boton"><a target="_blank" href="https://www.adidas.com.ar/shorts-local-boca-juniors-21-22/GU1885.html?cm_mmc=AdieSEM_Google_PLA-_-Always_On-_-Shopping-_-GU1885-0004-_-dv%3AeCom-_-cn%3AAlways_On-_-pc%3AF%C3%BAtbol&cm_mmc1=AR&cm_mmc2=PLA-Multiple-F%C3%BAtbol-Other-None-AR-LATAM-eCom-Paid_Search&dfw_tracker=20956-GU1885-0004&gclid=CjwKCAjwuYWSBhByEiwAKd_n_oCcjd1_Yd-zFk9gRz22xdwX63Y7Rr9YX0g39t0a-uUQtzQcO6LdsBoCmHwQAvD_BwE&gclsrc=aw.ds">comprar</a></button> </li>
+                    <li class="opcion__compras"> <h3 class="camisetas">River</h3> <img class="imagen" src="../images/river-logo.jpg" alt="river"> <button class="boton"><a target="_blank" href="https://www.adidas.com.ar/shorts-de-descanso-tiro-river-plate/GU9633.html?cm_mmc=AdieSEM_Google_PLA-_-Always_On-_-Shopping-_-GU9633-0002-_-dv%3AeCom-_-cn%3AAlways_On-_-pc%3AF%C3%BAtbol&cm_mmc1=AR&cm_mmc2=PLA-Multiple-F%C3%BAtbol-Other-None-AR-LATAM-eCom-Paid_Search&dfw_tracker=20956-GU9633-0002&gclid=CjwKCAjwuYWSBhByEiwAKd_n_lv25UVBC1-zXMcp8KA4uwsEIuLgZoPaLv0cFld5BhKcgc5R0MOV6xoCOCgQAvD_BwE&gclsrc=aw.ds">comprar</a></button> </li>
+                    <li class="opcion__compras"> <h3 class="camisetas">Rosario Central</h3> <img class="imagen" src="../images/central-logo.jpg" alt="central" > <button class="boton"><a target="_blank" href="https://tienda.umbro.com.ar/u31rc791-shorts-hombre-umbro-of-1-2022-c-a-r-c/p?idsku=283713&gclid=CjwKCAjwuYWSBhByEiwAKd_n_jr6jsEhLMMnPe5l_HVNp5U7yeUffh6lrcUFeLkikaaC269E-Kl_OxoC5S4QAvD_BwE">comprar</a></button> </li>
+                    <li class="opcion__compras"> <h3 class="camisetas">Nacional</h3> <img class="imagen" src="../images/nacional-log.jpg" alt="nacional"> <button class="boton"><a target="_blank" href="https://articulo.mercadolibre.com.uy/MLU-600077264-short-nacional-umbro-oficial-futbol-auge-_JM?searchVariation=173555753059#searchVariation=173555753059&position=4&search_layout=stack&type=item&tracking_id=92ee0441-8b14-4f62-8378-6be168548fb1">comprar</a></button> </li>
         </div>
         
         <div class="zona3">
             <h2 class="zona__titulo"><strong>Selecciones:</strong> </h2>
                 <ul class="div1__list">
-                    <li class="opcion__compras"> <h3 class="camisetas">Argentina</h3> <img class="imagen" src="../images/arg-logo.jpg" alt="arg" > <button class="btn"><a target="_blank" href="https://www.adidas.com.ar/shorts-titular-argentina/FS6573.html?cm_mmc=AdieSEM_Google_PLA-_-Always_On-_-Shopping-_-FS6573-0003-_-dv%3AeCom-_-cn%3AAlways_On-_-pc%3AF%C3%BAtbol&cm_mmc1=AR&cm_mmc2=PLA-Multiple-F%C3%BAtbol-Other-None-AR-LATAM-eCom-Paid_Search&dfw_tracker=20956-FS6573-0003&gclid=CjwKCAjwuYWSBhByEiwAKd_n_sLH17A-uNTJJTh9FXd8FsPMvjLb7zHQS5lZdoDvWjfw_VAXHLsO6RoCJZQQAvD_BwE&gclsrc=aw.ds">comprar</a></button> </li>
-                    <li class="opcion__compras"> <h3 class="camisetas">Brasil</h3> <img class="imagen" src="../images/brasil-log.jpg" alt="brs"> <button class="btn"><a target="_blank" href="https://mezzalacamisetas.com.ar/ofertas/short-brasil-local-2020-21/">comprar</a></button> </li>
-                    <li class="opcion__compras"> <h3 class="camisetas">Francia</h3> <img class="imagen" src="../images/francia-log.jpg" alt="frn" > <button class="btn"><a target="_blank" href="https://www.futbolmania.com/es/cd0859-498">comprar</a></button> </li>
-                    <li class="opcion__compras"> <h3 class="camisetas">Alemania</h3> <img class="imagen" src="../images/alemania-logo.jpg" alt="alm"> <button class="btn"><a target="_blank" href="https://www.adidas.com.ar/shorts-entrenamiento-alemania/FI0756.html">comprar</a></button> </li>
+                    <li class="opcion__compras"> <h3 class="camisetas">Argentina</h3> <img class="imagen" src="../images/arg-logo.jpg" alt="arg" > <button class="boton"><a target="_blank" href="https://www.adidas.com.ar/shorts-titular-argentina/FS6573.html?cm_mmc=AdieSEM_Google_PLA-_-Always_On-_-Shopping-_-FS6573-0003-_-dv%3AeCom-_-cn%3AAlways_On-_-pc%3AF%C3%BAtbol&cm_mmc1=AR&cm_mmc2=PLA-Multiple-F%C3%BAtbol-Other-None-AR-LATAM-eCom-Paid_Search&dfw_tracker=20956-FS6573-0003&gclid=CjwKCAjwuYWSBhByEiwAKd_n_sLH17A-uNTJJTh9FXd8FsPMvjLb7zHQS5lZdoDvWjfw_VAXHLsO6RoCJZQQAvD_BwE&gclsrc=aw.ds">comprar</a></button> </li>
+                    <li class="opcion__compras"> <h3 class="camisetas">Brasil</h3> <img class="imagen" src="../images/brasil-log.jpg" alt="brs"> <button class="boton"><a target="_blank" href="https://mezzalacamisetas.com.ar/ofertas/short-brasil-local-2020-21/">comprar</a></button> </li>
+                    <li class="opcion__compras"> <h3 class="camisetas">Francia</h3> <img class="imagen" src="../images/francia-log.jpg" alt="frn" > <button class="boton"><a target="_blank" href="https://www.futbolmania.com/es/cd0859-498">comprar</a></button> </li>
+                    <li class="opcion__compras"> <h3 class="camisetas">Alemania</h3> <img class="imagen" src="../images/alemania-logo.jpg" alt="alm"> <button class="boton"><a target="_blank" href="https://www.adidas.com.ar/shorts-entrenamiento-alemania/FI0756.html">comprar</a></button> </li>
         </div> 
     </div>
 
