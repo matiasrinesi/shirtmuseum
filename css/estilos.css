@@ -7,13 +7,16 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: rgba(184, 171, 171, 0.582) ;
+    
 
 }
 
 .header__logo{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
   
 
     
@@ -72,6 +75,19 @@ body {
    
 
 }
+.mysterybox{
+    font-size: 22px;
+    padding: 5px;
+}
+.shorts{
+font-size: 22px;
+padding: 5px;
+}
+.camiset{
+    font-size: 22px;
+    padding: 5px;
+}
+
 .inicio__titulo{
     text-decoration: underline;
     font-size: 30px;
@@ -136,10 +152,10 @@ body {
 }
 
 .opcion h3 { 
-    text-decoration: underline;
-    background-color: #0a1140 ;
+    text-decoration: none;
+    background-color: /*#0a1140*/black ;
     text-align: center;
-    color: white ;
+    color: rgb(236, 222, 14) ;
 }
 .opcion{
     display: inline-block;
@@ -154,6 +170,7 @@ body {
     "ca2"
     "ca3"
     "ca4";
+    
 }
 .camiseta__intro{
     grid-area: ca1;
@@ -170,6 +187,7 @@ body {
     border-style: double;
     background-color: white;
     grid-area: ca2;
+    
 
 
 }
@@ -206,13 +224,20 @@ body {
  
  }
 .boton{
-    display: block;
+   display: block;
     position: relative;
     left: 35%;
     margin-bottom: 10px;
     
+    margin-right: 50px;
+    
    
 }
+.botoninicio{
+    margin-right: 20px;
+  
+}
+
 .img{
 margin: 11px;
 }
@@ -348,6 +373,7 @@ footer h5{
    margin-top: 50px;
    margin-bottom: 50px;
 
+
    
 }
 .mystery__video h3{
@@ -368,8 +394,8 @@ footer h5{
 }
 
 .mystery__video iframe{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 200px;
     border-radius: 20px;
     padding: 10px;
     
@@ -564,20 +590,24 @@ transform: scale(1);
     }
     .mystery__titulo{
         width: 100%;
-        margin: 40px;
+        margin-right: 40px;
         font-size: 30px;
         
 
     }
     .mystery__subtitulo{
         width: 100%;
-        margin: 10px;
+        margin-right: 40px;
         font-size: 20px;
     }
     .mystery__parrafo{
         width: 100%;
-        margin: 10px;
+        margin-right: 40px;
     font-size: 12px;
+    }
+    .mystery__video iframe{
+        height: 250px;
+        height: 200px;
     }
 
     .camisetas{
@@ -589,9 +619,11 @@ transform: scale(1);
         "ca4";
         }
        
-        .opcion__compras{
-           /* margin: 100px;*/
-         }
+        /*.opcion__compras{
+            margin: 100px;   
+        }*/
+         
+         
 
    
     
