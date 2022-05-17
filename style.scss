@@ -14,6 +14,7 @@ body {
 @import "./components/index";
 @import "./components/header";
 @import "./components/contact";
+@import "./components/global";
 
 .camisetas{
     display: grid;
@@ -23,9 +24,16 @@ body {
     "ca2"
     "ca3"
     "ca4";
+    justify-content: center;
+    align-content: center;
+
     
 }
-.camiseta__intro{
+.miequipo{
+@extend .titleTemplate
+
+}
+.camisetas__intro{
     grid-area: ca1;
     
     /* text-decoration: underline; */
@@ -41,42 +49,52 @@ body {
 }
 
 .zona1{
-    margin: 50px;
-    border-style: double;
-    background-color: white;
-    grid-area: ca2;
+//     margin: 50px;
+//     border-style: double;
+//    background-color: $bgColor;
+//     grid-area: ca2;
+//     border-color: $textColor; 
+@include zonaProduct(ca2)
     
 
 
 }
 
 .zona2{
-    margin:50px;
-    border-style: double;
-    background-color: white;
-    grid-area: ca3;
+    // margin:50px;
+    // border-style: double;
+    // background-color: white;
+    // grid-area: ca3;
+    @include zonaProduct(ca3)
 
 }
 .zona3{
-    margin:50px;
-    border-style: double;
-    background-color: white;
-    grid-area: ca4;
+    // margin:50px;
+    // border-style: double;
+    // background-color: white;
+    // grid-area: ca4;
+    @include zonaProduct(ca4)
 
 }
 
 .zona__titulo{
     padding: 10px;
     text-decoration: underline;
+    color: $textColor;
 }
 
 
 .opcion__compras{
     display: inline-block;
      border-style: groove;
+     border-radius: 10px;
+     border-color: $textColor;
      margin: 50px;
      margin-bottom: 80px;
      overflow: hidden;
+     background-color: white;
+    /*background-color: $headerColor;*/
+  
     
      
  
@@ -84,12 +102,20 @@ body {
 .boton{
    display: block;
     position: relative;
-    left: 35%;
+    left: 31%;
     margin-bottom: 10px;
+    background-color: $bgColor;
+    padding: 3px;
+    font-size: 15px;
+    
     
     margin-right: 50px;
     
    
+}
+.comprar{
+    color: $textColor;
+    text-decoration: none;
 }
 .botoninicio{
     margin-right: 20px;
@@ -107,7 +133,8 @@ margin: 11px;
 .instagram{
   
 
-    color: white;
+    // color: white;
+    // color: $textColor ;
     border-radius: 5px;
     margin-right: 70px;
     text-decoration: none;
@@ -115,7 +142,8 @@ margin: 11px;
 }
 .whatsapp{
  
-    color: white;
+    // color: white;
+    // color: $textColor ;
     border-radius: 5px;
     margin-right: 70px;
     text-decoration: none;
@@ -123,23 +151,32 @@ margin: 11px;
 }
 .facebook{
 
-    color: white;
+    // color: white;
+    // color: $textColor ;
     border-radius: 5px;
     margin-right: 70px;
     text-decoration: none;
     
 }
 
+.footer__titulo{
+    margin-top: 10px;
+    font-size: 17px;
+}
+
 .footer{
-    border-style: groove;
+   /* border-style: groove; */
     margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
  /*background-color: rgb(105, 173, 196);*/
- background-image: linear-gradient(to left,rgb(105, 173, 196),rgb(79, 123, 138));
-    color: #e2e8f3;
+//  background-image: linear-gradient(to left,rgb(105, 173, 196),rgb(79, 123, 138));
+ /*background-image: linear-gradient(to left,rgb(0, 0, 0),rgb(53, 51, 51));*/
+    // color: #e2e8f3;
+    background-color: $headerColor;
+    color: $textColor ;
     font-style: none;
     margin-top: 20px;
     height: 60px;
@@ -399,11 +436,13 @@ transform: scale(1);
     font-size: 12px;
     }
     .mystery__video iframe{
-        height: 250px;
-        height: 200px;
+        width: 170px;
+        height: 100px;
     }
+   
 
     .camisetas{
+        
         grid-template-rows: 4% 32% 32% 32%;
         grid-template-areas: 
         "ca1"
@@ -415,15 +454,18 @@ transform: scale(1);
         /*.opcion__compras{
             margin: 100px;   
         }*/
-         
-         
+         .camisetas__intro{
+             font-size: 30px;
+         }
+
+        
 
    
     
     
 
    .contacto{
-    margin: 40px;
+   /* margin: 40px;*/
     
    }
    .contacto__titulo{
@@ -452,6 +494,9 @@ transform: scale(1);
        font-size: 12px;
        gap: 1rem;
        margin: 0;
+   }
+   .footer__titulo{
+       font-size: 10px;
    }
    .redes{
        display: flex;

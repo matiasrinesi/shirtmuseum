@@ -1,0 +1,28 @@
+.titleTemplate{
+    text-decoration: none;
+    background-color: $bgColor ;
+    text-align: center;
+    color: $textColor ;
+    font-size: 22px;
+    padding: 5px;
+}
+
+@mixin zonaProduct($gridArea) {
+    margin: 50px;
+    border-style: double;
+   background-color: $bgColor;
+    grid-area: $gridArea;
+    border-color: $textColor;
+    
+}
+$colors: (
+      instagram: #c04faf,
+      whatsapp:  #5cc382,
+      facebook: #0767AC,
+      );
+      @each $name-color, $bgcolor in $colors {
+        .#{$name-color} {
+            color: $bgcolor;
+            font-size: 20px;
+        }
+     }

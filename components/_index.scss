@@ -1,5 +1,5 @@
 .inicio{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     margin-top: 150px;
     margin-bottom: 100px;
     margin-left: 30px;
@@ -9,17 +9,16 @@
     border-radius: 20px;
     min-height: 50vh;
     display: grid;
-    grid-template-rows: 15% 15% 20% 50%;
+    grid-template-rows: 35% 30% 35%;
     grid-template-areas: 
     "m1"
     "m2"
-    "m3"
-    "m4";
+    "m3";
     justify-items: center;
     align-items: center;
     justify-content: center;
     align-content: center; 
-    gap: 35px;
+    gap: 25px;
 
     &__titulo{
         /* text-decoration: underline; */
@@ -94,13 +93,9 @@
    margin-bottom: 30px;
    
  h3 { 
-    text-decoration: none;
-    background-color: /*#0a1140*/black ;
-    text-align: center;
-    color: #FFC107 ;
-    font-size: 22px;
-    padding: 5px;
-}
+        @extend .titleTemplate;
+     }
+
 }
 
 
