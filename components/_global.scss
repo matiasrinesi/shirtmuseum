@@ -16,9 +16,9 @@
     
 }
 $colors: (
-      instagram: #c04faf,
-      whatsapp:  #5cc382,
-      facebook: #0767AC,
+      footer__redes__instagram: #c04faf,
+      footer__redes__whatsapp:  #5cc382,
+      footer__redes__facebook: #0767AC,
       );
       @each $name-color, $bgcolor in $colors {
         .#{$name-color} {

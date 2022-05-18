@@ -1,0 +1,142 @@
+.imagen{
+    width: 200px;
+   height: 160px;
+    object-fit: contain;
+    border-radius: 90%;
+    padding: 10px;
+}
+.imagen:hover{
+    animation-name: escudo;
+    animation-duration: 2s;
+
+
+}
+@keyframes escudo{
+    0%{
+transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+
+.camisetas{
+    display: grid;
+    grid-template-rows: 10% 30% 30% 30%;
+    grid-template-areas: 
+    "ca1"
+    "ca2"
+    "ca3"
+    "ca4";
+    justify-content: center;
+    align-content: center;
+
+    &__intro{
+    grid-area: ca1;
+    
+    /* text-decoration: underline; */
+    justify-self: center;
+    align-self: center;
+    /* background-color:#212529 ; */
+    color: $textColor  ;
+    padding: 15px;
+    font-size: 40px;
+    /* text-decoration: underline; */
+    border-radius: 10px;
+    
+}
+}
+.miequipo{
+@extend .titleTemplate
+
+}
+
+
+.zona1{
+//     margin: 50px;
+//     border-style: double;
+//    background-color: $bgColor;
+//     grid-area: ca2;
+//     border-color: $textColor; 
+@include zonaProduct(ca2)
+    
+
+
+}
+
+.zona2{
+    // margin:50px;
+    // border-style: double;
+    // background-color: white;
+    // grid-area: ca3;
+    @include zonaProduct(ca3)
+
+}
+.zona3{
+    // margin:50px;
+    // border-style: double;
+    // background-color: white;
+    // grid-area: ca4;
+    @include zonaProduct(ca4)
+
+}
+
+.zona__titulo{
+    padding: 10px;
+    text-decoration: underline;
+    color: $textColor;
+}
+
+
+.opcion__compras{
+    display: inline-block;
+     border-style: groove;
+     border-radius: 10px;
+     border-color: $textColor;
+     margin: 50px;
+     margin-bottom: 80px;
+     overflow: hidden;
+     background-color: white;
+    /*background-color: $headerColor;*/
+  
+    
+     
+ 
+ }
+.boton{
+   display: block;
+    position: relative;
+    left: 31%;
+    margin-bottom: 10px;
+    background-color: $bgColor;
+    padding: 3px;
+    font-size: 15px;
+    
+    
+    margin-right: 50px;
+    
+   
+}
+.comprar{
+    color: $textColor;
+    text-decoration: none;
+}
+
+@media screen and (max-width:600px) {
+    .camisetas{
+        
+        grid-template-rows: 4% 32% 32% 32%;
+        grid-template-areas: 
+        "ca1"
+        "ca2"
+        "ca3"
+        "ca4";
+
+         &__intro{
+             font-size: 30px;
+         }
+        }
+       
+        
+        
+}

@@ -1,9 +1,18 @@
 .contacto__titulo{
     text-decoration:underline;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 32px;
+
     
 }
 
 .sexo{
     margin-right: 10px;
+}
+
+@media screen and (max-width:600px){
+    .contacto__titulo{
+        font-size: 23px;
+    }
 }

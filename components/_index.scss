@@ -20,6 +20,11 @@
     align-content: center; 
     gap: 25px;
 
+    &__boton{
+        margin-right: 20px;
+      
+    }
+
     &__titulo{
         /* text-decoration: underline; */
         font-size: 70px;
@@ -96,6 +101,47 @@
         @extend .titleTemplate;
      }
 
+}
+@media screen and (max-width:600px) {
+    .inicio{
+        grid-template-columns: 1fr;
+        grid-template-rows: 110px  110px  110px 110px;
+
+            &__titulo{
+        width: 100%;
+        margin: 40px;
+        font-size: 30px;
+        
+
+    }
+    &__subtitulo{
+        width: 100%;
+        margin: 10px;
+        font-size: 20px;
+    }
+    &__parrafo{
+        width: 100%;
+        margin: 10px;
+    font-size: 12px;
+    margin-bottom: 50px;
+    }
+        
+    }
+
+  
+    .div1{
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 30% 30% 30%;
+      
+        grid-template-areas: 
+        "ele1 ele1 ele1"
+        "ele2 ele2 ele2"
+        "ele3 ele3 ele3"
+        "ele4 ele4 ele4";
+        margin: 20px;
+       
+    }
+    
 }
 
 
