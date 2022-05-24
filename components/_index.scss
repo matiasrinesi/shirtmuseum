@@ -106,15 +106,18 @@
     .inicio{
         grid-template-columns: 1fr;
         grid-template-rows: 110px  110px  110px ;
+        margin-top: 20px;
        
 
             &__titulo{
         width: 100%;
-        margin: 40px;
+        margin: 30px;
         font-size: 35px;
         
 
     }
+
+ 
     &__subtitulo{
         width: 100%;
         margin: 10px;
@@ -143,6 +146,16 @@
        
     }
     
+}
+
+@media screen and (max-width:349px){
+    .div1__titulo{
+        font-size: 17px;
+    }
+    .inicio__boton{
+        font-size: 12px;
+        margin-left: 12px;
+    }
 }
 
 
